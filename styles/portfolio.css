@@ -52,7 +52,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 0px  200px 50px;
 }
 .nav_title{
     font-weight: 800;
@@ -198,3 +198,40 @@ main section{
     margin-bottom: 24px;
     border: none;
    }
+
+   /* responsive media query */
+   
+   @media screen and (max-width: 576px) {
+    .skills_container{
+        flex-direction: column;
+    }
+    .resume_container, 
+    footer,
+    .about_items,
+    .banner{
+        flex-direction: column;
+    }
+    .banner{
+        margin: 10px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner img {
+        width: 100%;
+    }
+    footer,
+    .about{
+        padding: 10px;
+    }
+    .footer_column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea {
+        width: calc(100% - 40px);
+    }
+    nav{
+        margin: 0 0;
+    }
+   }
+  
